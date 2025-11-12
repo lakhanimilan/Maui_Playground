@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MauiPlayground.ViewModels"
+             x:Class="MauiPlayground.Views.ToolbarItemPage"
+             x:DataType="viewModels:ToolbarItemPageViewModel">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            IconImageSource="thumb_up.png"
+            Text="Like" />
+        <ToolbarItem
+            IconImageSource="thumb_down.png"
+            Text="Dislike" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Button Text="Open Second Page" Command="{Binding SecondPageCommand}"></Button>    
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

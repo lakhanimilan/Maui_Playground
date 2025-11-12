@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MauiPlayground;
+namespace MauiPlayground.Views;
 
 public partial class SecondPage : ContentPage
 {
